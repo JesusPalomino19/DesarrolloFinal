@@ -1,0 +1,62 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://wallpapers.com/images/high/hotel-background-02sej3vsffql6or2.webp'); /* Set the specified background image */
+  background-size: cover;
+  background-position: center;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.module {
+  background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 80%; /* Adjust width to fit more rooms */
+}
+
+.room-list {
+  display: flex;
+  flex-direction: column; /* Arrange room rows vertically */
+  align-items: stretch; /* Stretch to fill the width */
+}
+
+.room-row {
+  display: flex; /* Use flexbox for room row */
+  justify-content: space-between; /* Space out elements */
+  align-items: center; /* Center align items vertically */
+  padding: 10px;
+  margin: 5px 0; /* Margin between rows */
+  background-color: #f9f9f9; /* Light background for room rows */
+  border: 1px solid #ccc; /* Border for room rows */
+  border-radius: 5px; /* Rounded corners */
+}
+
+button {
+  margin: 0 5px; /* Adjust margin for buttons */
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff; /* Blue background for buttons */
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+  background-color: #0056b3; /* Darker blue on hover */
+}
